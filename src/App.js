@@ -32,6 +32,31 @@ function App() {
           borderWidth={0.5}
           isInteractive={true}
           borderColor="#111111"
+          legends={[
+            {
+              anchor: "bottom-right",
+              direction: "column",
+              justify: true,
+              translateX: -10,
+              translateY: -100,
+              itemsSpacing: 32,
+              itemWidth: 94,
+              itemHeight: 18,
+              itemDirection: "left-to-right",
+              itemOpacity: 1,
+              symbolSize: 32,
+              itemTextColor: "#57656B",
+              effects: [
+                {
+                  on: "hover",
+                  style: {
+                    itemTextColor: "#ffffff",
+                    itemOpacity: 1,
+                  },
+                },
+              ],
+            },
+          ]}
         />
       </div>
     </div>
